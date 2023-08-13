@@ -7,6 +7,8 @@ module.exports = {
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:import/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
         "standard",
         "plugin:react/jsx-runtime",
         "prettier",
@@ -22,7 +24,7 @@ module.exports = {
         ecmaVersion: "latest",
         sourceType: "module"
     },
-    plugins: ["react", "prettier"],
+    plugins: ["react", "prettier", "import"],
     rules: {
         indent: ["error", 4],
         semi: [2, "always"],
